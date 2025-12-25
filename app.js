@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 3002;
 let uri = "mongodb+srv://Mandeep:Mandeep2004@cluster0.8uejhos.mongodb.net/?appName=Cluster0";
 app.use(cors({
-    origin: "http://localhost:3000", 
+    origin: ["http://localhost:3000", "https://cricket-x5jp.onrender.com"], 
     methods: ["GET", "POST"],
     credentials: true
 }));
